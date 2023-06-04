@@ -1,0 +1,22 @@
+---
+import LandingHeader from '../components/LandingHeader.astro';
+import AboutHogera from '../components/AboutHogera.astro';
+import Home from '../components/Home.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="La Hoguera">
+  <LandingHeader />
+
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth scroll-m-0"
+  >
+    <div class="snap-center">
+      <Home />
+    </div>
+
+    <div class="snap-center">
+      <AboutHogera />
+    </div>
+  </main>
+</Layout>

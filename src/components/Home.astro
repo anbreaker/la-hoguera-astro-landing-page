@@ -1,0 +1,25 @@
+---
+import Section from './Section.astro';
+import LinkButton from './LinkButton.astro';
+---
+
+<Section
+  color="white"
+  title="Colectivo La Hoguera"
+  subTitle="Somos un Colectivo y estamos fomentando la escena artística de Badajoz, para el mundo!."
+  idSection="section1"
+>
+  <div slot="footer">
+    <LinkButton buttonText="Siguiente" idSection="#section2" />
+  </div>
+
+  <video
+    slot="background"
+    class="object-cover h-full w-full object-center absolute z-2"
+    src="/videos/hoguera1.webm"
+    autoplay
+    loop
+    muted
+  >
+  </video>
+</Section>
