@@ -1,11 +1,12 @@
 ---
+import LavaLamp from '../components/LavaLamp.astro';
 import LinkButton from '../components/LinkButton.astro';
 import SectionPage from '../components/SectionPage.astro';
 ---
 
 <SectionPage color="white" title="La Hoguera" idSection="section2">
   <div
-    class="text-white flex flex-col pt-8 pb-8 justify-center font-semibold mx-8 sm:mx-16 md:mx-32 lg:mx-64 xl:mx-80 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl h-100 overflow-y-auto"
+    class="text-white flex flex-col pt-8 pb-8 justify-center font-semibold mx-8 sm:mx-16 md:mx-32 lg:mx-64 xl:mx-80 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl h-100 overflow-y-auto scrollbar-hidden shadow-2xl"
   >
     <p>
       En La Hoguera, somos el hogar vibrante del arte musical en Badajoz. Con nuestra pasión y
@@ -33,7 +34,7 @@ import SectionPage from '../components/SectionPage.astro';
   </div>
 
   <div slot="footer">
-    <div class="flex justify-center gap-6">
+    <div class="flex justify-center gap-6 pt-8">
       <LinkButton
         buttonText="Siguiente seccion"
         classButtons="bg-gray-900 text-sm rounded font-medium inline-flex text-white px-16 py-1 items-center hover:bg-white hover:text-black transition-colors duration-300"
@@ -50,6 +51,8 @@ import SectionPage from '../components/SectionPage.astro';
       id="bg-image-hall-of-fame"
     />
   </div>
+
+  <LavaLamp />
 </SectionPage>
 
 <style>
