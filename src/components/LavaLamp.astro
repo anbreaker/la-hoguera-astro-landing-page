@@ -1,16 +1,20 @@
+---
+const { color = '#ea3281' } = Astro.props;
+---
+
 <div>
   <div class="lamp">
     <div class="lava">
-      <div class="blob"></div>
-      <div class="blob"></div>
-      <div class="blob"></div>
-      <div class="blob"></div>
-      <div class="blob"></div>
-      <div class="blob"></div>
-      <div class="blob"></div>
-      <div class="blob"></div>
-      <div class="blob top"></div>
-      <div class="blob bottom"></div>
+      <div class="blob" style={`--color-blob: ${color}`}></div>
+      <div class="blob" style={`--color-blob: ${color}`}></div>
+      <div class="blob" style={`--color-blob: ${color}`}></div>
+      <div class="blob" style={`--color-blob: ${color}`}></div>
+      <div class="blob" style={`--color-blob: ${color}`}></div>
+      <div class="blob" style={`--color-blob: ${color}`}></div>
+      <div class="blob" style={`--color-blob: ${color}`}></div>
+      <div class="blob" style={`--color-blob: ${color}`}></div>
+      <div class="blob top" style={`--color-blob: ${color}`}></div>
+      <div class="blob bottom" style={`--color-blob: ${color}`}></div>
     </div>
   </div>
 
@@ -59,7 +63,7 @@
 
   .blob {
     border-radius: 50%;
-    background: #ea3281;
+    background: var(--color-blob, #ea3281);
     position: absolute;
   }
 
