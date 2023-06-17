@@ -1,0 +1,59 @@
+---
+import LinkButton from '../components/LinkButton.astro';
+import SectionPage from '../components/SectionPage.astro';
+---
+
+<SectionPage color="white" title="La Hoguera" idSection="section2">
+  <div
+    class="text-white flex flex-col pt-8 pb-8 justify-center font-semibold mx-8 sm:mx-16 md:mx-32 lg:mx-64 xl:mx-80 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"
+  >
+    <p>
+      En La Hoguera, somos el hogar vibrante del arte musical en Badajoz. Con nuestra pasión y
+      entrega, estamos revolucionando la escena musical de nuestra ciudad de manera excepcional.
+    </p>
+    <p>
+      Desde nuestros inicios, nos hemos convertido en el faro de creatividad y expresión para los
+      talentos locales. Impulsamos a los artistas emergentes y creamos un espacio inclusivo para la
+      experimentación musical.
+    </p>
+    <p>
+      Ofrecemos una programación diversa y emocionante, con conciertos, festivales y eventos que
+      atraen a una audiencia ávida de descubrir nuevos sonidos y propuestas artísticas. Fomentamos
+      la colaboración y la conexión entre artistas, creando un ambiente de apoyo y crecimiento
+      mutuo.
+    </p>
+    <p>
+      Hemos puesto a Badajoz en el mapa musical, atrayendo la atención de renombrados artistas y
+      promoviendo el intercambio cultural a través de alianzas con otras comunidades artísticas.
+    </p>
+    <p>
+      Avivamos las llamas del arte musical de Badajoz, brindando un espacio vital para la expresión
+      creativa y el descubrimiento de nuevos talentos.
+    </p>
+  </div>
+
+  <div slot="footer">
+    <div class="flex justify-center gap-6">
+      <LinkButton
+        buttonText="Siguiente seccion"
+        classButtons="bg-gray-900 text-sm rounded font-medium inline-flex text-white px-16 py-1 items-center hover:bg-white hover:text-black transition-colors duration-300"
+        idSection="#section1"
+      />
+    </div>
+  </div>
+
+  <div slot="background" class="absolute top-0 bottom-0 h-full w-full z-10">
+    <img
+      alt="Fondo de la página sobre nostros de la hoguera."
+      class="h-full w-full object-cover object-center bg-image"
+      src="/svgs/page2.svg"
+      id="bg-image-hall-of-fame"
+    />
+  </div>
+</SectionPage>
+
+<style>
+  p {
+    padding-bottom: 2rem;
+  }
+</style>

@@ -1,5 +1,5 @@
 ---
-const { color, idSection, subTitle, title } = Astro.props;
+const { color, idSection, subTitle, title, showButton } = Astro.props;
 const textColor = `text-${color}`;
 ---
 
@@ -14,6 +14,8 @@ const textColor = `text-${color}`;
 
       <p class={`${textColor} text-xl mt-2`}>{subTitle}</p>
     </header>
+
+    <slot />
 
     <footer class="flex flex-col flex-grow justify-end pb-20">
       <div>

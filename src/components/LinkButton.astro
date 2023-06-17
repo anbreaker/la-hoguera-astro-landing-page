@@ -15,8 +15,6 @@ const { buttonText, classButtons, idSection } = Astro.props;
 <script>
   const itemsLinks = document.querySelectorAll('div a');
 
-  console.log({ itemsLinks });
-
   itemsLinks.forEach((link) => {
     link.addEventListener('click', (ev) => {
       ev.preventDefault();

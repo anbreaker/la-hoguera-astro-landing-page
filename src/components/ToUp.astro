@@ -1,0 +1,38 @@
+<div class="landing-page">
+  <a href="#section1" class="scroll-to-top">
+    <img
+      class="w-12 h-12 pb-2 hover:scale-125 transition duration-300"
+      src="/svgs/up-arrow.svg"
+      alt=""
+    />
+  </a>
+</div>
+
+<style>
+  /* Estilos para el botón "Subir hasta arriba" */
+  .scroll-to-top {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+
+  .visible {
+    display: 'none';
+  }
+</style>
+
+<script>
+  const itemsLinks = document.querySelectorAll('div a');
+
+  itemsLinks.forEach((link) => {
+    link.addEventListener('click', (ev) => {
+      ev.preventDefault();
+
+      const destinationSection = link.getAttribute('href');
+
+      document
+        .querySelector(destinationSection)
+        .scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
