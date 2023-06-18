@@ -15,14 +15,11 @@ const { buttonText, classButtons, idSection } = Astro.props;
 <script>
   const itemsLinks = document.querySelectorAll('.link-button a');
 
-  console.log({ itemsLinks });
-
   itemsLinks.forEach((link) => {
     link.addEventListener('click', (ev) => {
       ev.preventDefault();
 
       const destinationSection = link.getAttribute('href');
-      console.log(destinationSection);
 
       document
         .querySelector(destinationSection)
