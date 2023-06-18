@@ -23,7 +23,6 @@ import Navbar from './Navbar.astro';
       const { isIntersecting } = entry;
       if (isIntersecting) {
         const color = entry.target.getAttribute('data-header-color');
-        // console.log({ color });
         header.style.color = color;
       }
     });
