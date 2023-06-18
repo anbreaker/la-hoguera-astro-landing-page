@@ -1,36 +1,38 @@
 ---
+import Card from '../components/Card.astro';
 import LavaLamp from '../components/LavaLamp.astro';
 import LinkButton from '../components/LinkButton.astro';
 import SectionPage from '../components/SectionPage.astro';
-
-const photos = [
-  { url: '/images/calendar1122.jpg' },
-  { url: '/images/gambitoLlama.jpg' },
-  { url: '/images/jamOn.jpg' },
-  { url: '/images/jamSaudade.jpg' },
-  { url: '/images/parlanChispas.jpeg' },
-  { url: '/images/gambitoLlama.jpg' },
-
-  { url: '/images/calendar1122.jpg' },
-  { url: '/images/gambitoLlama.jpg' },
-  { url: '/images/jamOn.jpg' },
-  { url: '/images/jamSaudade.jpg' },
-  { url: '/images/parlanChispas.jpeg' },
-  { url: '/images/gambitoLlama.jpg' },
-
-  // add..
-];
 ---
 
-<SectionPage color="white" title="La Hoguera" idSection="section3">
-  <div class="container-all mx-auto overflow-y-auto scrollbar-hidden shadow-2xl">
-    {
-      photos.map((photo) => (
-        <div class="container">
-          <img class="w-80" src={photo.url} alt="" />
-        </div>
-      ))
-    }
+<SectionPage color="white" title="Nuestras Redes Sociales" idSection="section4">
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-2 h-100 overflow-y-auto scrollbar-hidden shadow-2xl md:mt-8 lg:mt-12 xl:mt-20"
+  >
+    <div class={`sm:order-2`}>
+      <Card
+        descriptionMedia="Comunidad, Asociación Cultural Multidisciplinar."
+        iconMedia="/svgs/instagram.svg"
+        socialMediaName="instagram"
+        urlMedia="https://www.instagram.com/lahoguerabadajoz"
+      />
+    </div>
+    <div class={`sm:order-1`}>
+      <Card
+        descriptionMedia="Colectivo cultural multidisciplinar La Hoguera"
+        iconMedia="/svgs/facebook.svg"
+        socialMediaName="facebook"
+        urlMedia="https://www.facebook.com/coolectivolahoguera/"
+      />
+    </div>
+    <div class={`sm:order-3`}>
+      <Card
+        descriptionMedia="La Hoguera Badajoz"
+        iconMedia="/svgs/youtube.svg"
+        socialMediaName="youtube"
+        urlMedia="https://www.youtube.com/channel/UCeV6jQGr_y1vWs_amOHbyvw"
+      />
+    </div>
   </div>
 
   <div slot="footer">
@@ -38,7 +40,7 @@ const photos = [
       <LinkButton
         buttonText="Siguiente seccion"
         classButtons="bg-gray-900 text-sm rounded font-medium inline-flex text-white px-16 py-1 items-center hover:bg-white hover:text-black transition-colors duration-300"
-        idSection="#section1"
+        idSection="#section5"
       />
     </div>
   </div>
@@ -52,7 +54,7 @@ const photos = [
     />
   </div>
 
-  <LavaLamp color="#eb7458" />
+  <LavaLamp color="#2978A0" />
 </SectionPage>
 
 <style>

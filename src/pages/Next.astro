@@ -1,0 +1,63 @@
+---
+import LavaLamp from '../components/LavaLamp.astro';
+import LinkButton from '../components/LinkButton.astro';
+import SectionPage from '../components/SectionPage.astro';
+---
+
+<SectionPage color="white" title="Próximamente - Blog La Hoguera" idSection="section5">
+  <div
+    class="text-white pt-8 pb-8 justify-center font-semibold mx-8 sm:mx-16 md:mx-32 lg:mx-64 xl:mx-80 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl h-100 overflow-y-auto scrollbar-hidden shadow-2xl h-full bg-gray-800 bg-opacity-40 px-6 rounded-lg"
+  >
+    <p>
+      El blog de La Hoguera será como nuestra propia revista virtual, donde podrás encontrar
+      resúmenes, entrevistas y contenido exclusivo. ¡Será el lugar perfecto para mantenerte al día
+      con la escena musical y cultural de Badajoz!
+    </p>
+    <p>
+      Queremos que te sientas parte de nuestra comunidad, así que el blog será una ventana directa a
+      nuestra pasión y nuestra energía. Prepárate para descubrir nuevos artistas, explorar
+      diferentes géneros y sumergirte en el ambiente vibrante de La Hoguera.
+    </p>
+    <p>
+      Estamos trabajando duro para lanzar el blog muy pronto, así que mantente al tanto de nuestras
+      actualizaciones. ¡No te pierdas este viaje musical lleno de emociones y sorpresas!
+    </p>
+    <p>
+      En resumen: ¡estamos creando el blog de La Hoguera para que puedas disfrutar y ser parte de
+      nuestra increíble escena musical! ¡Esto va a ser épico!"
+    </p>
+
+    <img
+      src="/public/images/hogueraLogo.png"
+      alt="Logotipo de La Hoguera"
+      class="mx-auto block w-28"
+    />
+  </div>
+
+  <div slot="footer">
+    <div class="flex justify-center gap-6 pt-8">
+      <LinkButton
+        buttonText="Inicio"
+        classButtons="bg-gray-900 text-sm rounded font-medium inline-flex text-white px-16 py-1 items-center hover:bg-white hover:text-black transition-colors duration-300"
+        idSection="#section1"
+      />
+    </div>
+  </div>
+
+  <div slot="background" class="absolute top-0 bottom-0 h-full w-full z-10">
+    <img
+      alt="Fondo de la página sobre nostros de la hoguera."
+      class="h-full w-full object-cover object-center bg-image"
+      src="/svgs/page2.svg"
+      id="bg-image-hall-of-fame"
+    />
+  </div>
+
+  <LavaLamp color="#F9B54C" />
+</SectionPage>
+
+<style>
+  p {
+    padding-bottom: 2rem;
+  }
+</style>

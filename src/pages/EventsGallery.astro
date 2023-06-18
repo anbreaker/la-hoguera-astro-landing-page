@@ -1,0 +1,110 @@
+---
+import LavaLamp from '../components/LavaLamp.astro';
+import LinkButton from '../components/LinkButton.astro';
+import SectionPage from '../components/SectionPage.astro';
+
+const photos = [
+  { url: '/images/calendar1122.jpg' },
+  { url: '/images/gambitoLlama.jpg' },
+  { url: '/images/jamOn.jpg' },
+  { url: '/images/jamSaudade.jpg' },
+  { url: '/images/parlanChispas.jpeg' },
+  { url: '/images/gambitoLlama.jpg' },
+
+  { url: '/images/calendar1122.jpg' },
+  { url: '/images/gambitoLlama.jpg' },
+  { url: '/images/jamOn.jpg' },
+  { url: '/images/jamSaudade.jpg' },
+  { url: '/images/parlanChispas.jpeg' },
+  { url: '/images/gambitoLlama.jpg' },
+
+  // add..
+];
+---
+
+<SectionPage color="white" title="Eventos - La Hoguera" idSection="section3">
+  <div class="container-all mx-auto overflow-y-auto scrollbar-hidden shadow-2xl">
+    {
+      photos.map((photo) => (
+        <div class="container">
+          <img class="w-80" src={photo.url} alt="" />
+        </div>
+      ))
+    }
+  </div>
+
+  <div slot="footer">
+    <div class="flex justify-center gap-6 pt-8">
+      <LinkButton
+        buttonText="Siguiente seccion"
+        classButtons="bg-gray-900 text-sm rounded font-medium inline-flex text-white px-16 py-1 items-center hover:bg-white hover:text-black transition-colors duration-300"
+        idSection="#section4"
+      />
+    </div>
+  </div>
+
+  <div slot="background" class="absolute top-0 bottom-0 h-full w-full z-10">
+    <img
+      alt="Fondo de la página sobre nostros de la hoguera."
+      class="h-full w-full object-cover object-center bg-image"
+      src="/svgs/page2.svg"
+      id="bg-image-hall-of-fame"
+    />
+  </div>
+
+  <LavaLamp color="#eb7458" />
+</SectionPage>
+
+<style>
+  .container-all {
+    width: fit-content;
+    margin: 20px auto;
+    height: auto;
+  }
+
+  .container {
+    width: calc(15% - 6px);
+    overflow: hidden;
+    height: fit-content;
+    margin: 3px;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    transition-duration: 0.3s;
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    align-self: center;
+  }
+
+  .container:hover img {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    filter: grayscale(50%);
+    opacity: 0.7;
+  }
+
+  .container:hover span {
+    color: white;
+    display: block;
+    transition-duration: 0.3s;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .container {
+      width: calc(50% - 6px);
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .container {
+      width: 100%;
+    }
+  }
+</style>

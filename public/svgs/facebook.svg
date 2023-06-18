@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="358.33734"
+   height="354.42133"
+   viewBox="0 0 358.33734 354.42133"
+   sodipodi:docname="facebook-seeklogo.com.ai"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-9.4e-6,-215.99991,-215.99991,9.4e-6,134.37695,234.4082)"
+       spreadMethod="pad"
+       id="linearGradient28">
+      <stop
+         style="stop-opacity:1;stop-color:#31acd5"
+         offset="0"
+         id="stop22" />
+      <stop
+         style="stop-opacity:1;stop-color:#3b63a5"
+         offset="0.60514006"
+         id="stop24" />
+      <stop
+         style="stop-opacity:1;stop-color:#3b63a5"
+         offset="1"
+         id="stop26" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath38">
+      <path
+         d="M 0,265.816 H 268.753 V 0 H 0 Z"
+         id="path36" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="facebook-seeklogo.com"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,354.42133)">
+    <g
+       id="g10">
+      <g
+         id="g12">
+        <g
+           id="g18">
+          <g
+             id="g20">
+            <path
+               d="m 29.876,132.908 c 0,-57.714 46.787,-104.499 104.501,-104.499 v 0 c 57.713,0 104.5,46.785 104.5,104.499 v 0 c 0,57.714 -46.787,104.5 -104.5,104.5 v 0 c -57.714,0 -104.501,-46.786 -104.501,-104.5"
+               style="fill:url(#linearGradient28);stroke:none"
+               id="path30" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g32">
+      <g
+         id="g34"
+         clip-path="url(#clipPath38)">
+        <g
+           id="g40"
+           transform="translate(150.3223,162.646)">
+          <path
+             d="m 0,0 c 5.184,1.089 15.748,-1.962 15.748,-1.962 l 3.59,24.866 c 0,0 -6.981,1.744 -23.525,1.964 -16.546,0.215 -26.113,-8.725 -29.503,-15.49 -3.389,-6.762 -2.789,-10.905 -2.789,-19.634 v -17.665 h -14.75 v -23.333 h 14.75 v -84.203 H -8.17 v 84.203 h 21.328 l 2.59,23.333 H -8.17 v 14.614 C -8.17,-4.582 -5.182,-1.091 0,0"
+             style="fill:#f5f5f4;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path42" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
