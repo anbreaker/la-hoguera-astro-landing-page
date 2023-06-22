@@ -10,9 +10,13 @@ const textColor = `text-${color}`;
 >
   <div class="z-30 relative h-full flex flex-col">
     <header>
-      <h2 class={`${textColor} pt-28 text-[40px] font-medium`}>{title}</h2>
+      <h2
+        class={`${textColor} pt-20 text-[1.5rem] md:text-[1.875rem] lg:text-[2.25rem] xl:text-[2.5rem] font-medium`}
+      >
+        {title}
+      </h2>
 
-      <p class={`${textColor} text-xl mt-2`}>{subTitle}</p>
+      <p class={`${textColor} text-lg md:text-xl mt-2`}>{subTitle}</p>
     </header>
 
     <slot />
