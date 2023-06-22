@@ -9,43 +9,33 @@ import Logo from './Logo.astro';
   </a>
 </div>
 
-<nav>
-  <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16 pr-4">
-      <div class="flex items-center">
-        <div class="hidden sm:block sm:ml-6 text-[#F1C22E]">
-          <ul
-            class="flex space-x-4 [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:px-3 [&>li>a]:py-2"
-          >
-            <li><a href="#section1">Inicio</a></li>
-            <li class="whitespace-nowrap"><a href="#section2">La Hoguera</a></li>
-            <li><a href="#section4">Contacto</a></li>
-          </ul>
-        </div>
+<nav class="w-screen">
+  <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 flex items-center justify-between h-16 pr-4">
+    <div class="flex items-center">
+      <div class="flex flex-grow basis-0 logo logo-transition">
+        <a href="#section1" class="w-22 h-22 transform hover:scale-125 transition duration-1000">
+          <Logo />
+        </a>
       </div>
-      <div class="flex sm:hidden">
-        <button
-          id="menuButton"
-          type="button"
-          class="text-gray-300 hover:text-white focus:outline-none focus:text-white px-1"
+      <div class="hidden sm:block sm:ml-6 text-[#F1C22E]">
+        <ul
+          class="flex space-x-4 [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:px-3 [&>li>a]:py-2"
         >
-          <HamburgerSvg />
-        </button>
+          <li><a href="#section1">Inicio</a></li>
+          <li class="whitespace-nowrap"><a href="#section2">La Hoguera</a></li>
+          <li><a href="#section4">Contacto</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-
-  <div
-    id="menu-backdrop"
-    class={`
-      absolute bg-[#F3764A]/20 backdrop-blur-lg rounded
-      translate-x-[var(--left)] translate-y-[var(--top)]
-      left-0 top-0
-      w-[var(--width)] h-[var(--height)]
-      transition-all duration-500
-      ease-in-out opacity-0 -z-10
-    `}
-  >
+    <div class="flex sm:hidden justify-center">
+      <button
+        id="menuButton"
+        type="button"
+        class="text-gray-300 hover:text-white focus:outline-none focus:text-white px-1"
+      >
+        <HamburgerSvg />
+      </button>
+    </div>
   </div>
 </nav>
 
