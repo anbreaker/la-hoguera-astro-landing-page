@@ -3,15 +3,11 @@ import HamburgerSvg from './HamburgerSvg.astro';
 import Logo from './Logo.astro';
 ---
 
-<div class="flex flex-grow basis-0 logo logo-transition">
-  <a href="#section1" class="w-22 h-22 transform hover:scale-125 transition duration-1000">
-    <Logo />
-  </a>
-</div>
-
 <nav class="w-screen">
-  <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 flex items-center justify-between h-16 pr-4">
-    <div class="flex items-center">
+  <div
+    class="max-w-full mx-auto sm:px-6 lg:px-8 flex items-center justify-between xl:justify-end h-16 pr-4"
+  >
+    <div class="flex items-center justify-evenly sm:justify-between xl:jus w-full">
       <div class="flex flex-grow basis-0 logo logo-transition">
         <a href="#section1" class="w-22 h-22 transform hover:scale-125 transition duration-1000">
           <Logo />
@@ -19,7 +15,7 @@ import Logo from './Logo.astro';
       </div>
       <div class="hidden sm:block sm:ml-6 text-[#F1C22E]">
         <ul
-          class="flex space-x-4 [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:px-3 [&>li>a]:py-2"
+          class="flex space-x-4 [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:px-3 [&>li>a]:py-2 justify-end"
         >
           <li><a href="#section1">Inicio</a></li>
           <li class="whitespace-nowrap"><a href="#section2">La Hoguera</a></li>
