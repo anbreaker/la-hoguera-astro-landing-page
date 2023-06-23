@@ -20,14 +20,16 @@ const photos = [
 
   // add..
 ];
+
+const altImages = photos.map((item) => item.url.match(/\/images\/(.*?)\.[^.]+$/)[1]);
 ---
 
 <SectionPage color="white" title="Eventos - La Hoguera" idSection="section3">
   <div class="container-all mx-auto overflow-y-auto scrollbar-hidden shadow-2xl">
     {
-      photos.map((photo) => (
+      photos.map((photo,index) => (
         <div class="container">
-          <img class="w-80" src={photo.url} alt="" />
+          <img class="w-80" src={photo.url} alt={`Nombre de la imagen ${altImages[index]}`} />
         </div>
       ))
     }
