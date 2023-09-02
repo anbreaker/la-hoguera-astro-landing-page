@@ -5,7 +5,5 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  server: {
-    hostname: '0.0.0.0',
-  },
+  server: { port: 3000 },
 });
